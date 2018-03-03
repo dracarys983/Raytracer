@@ -1,0 +1,65 @@
+------------WITH MID-PT. ALGO BVH------------
+udyan@udyan-K55VM:~/Desktop/CVIT/Ray-Tracing/raytracer-code/black_and_white_SAH$ ./a.out bunny.obj bunny.pgm 1000 1000
+Time For Reading Input + Building BVH: 220.069557 ms
+Time For Intersection Tests: 522.986911 ms
+Time For Writing To Output: 80.281331 ms
+TOTAL TIME: 823.337799 ms
+
+udyan@udyan-K55VM:~/Desktop/CVIT/Ray-Tracing/raytracer-code/black_and_white_SAH$ ./a.out cow.obj cow.pgm 1000 1000
+Time For Reading Input + Building BVH: 29.576569 ms
+Time For Intersection Tests: 478.292853 ms
+Time For Writing To Output: 80.058274 ms
+TOTAL TIME: 587.927696 ms
+
+
+------------WITH SAH BVH------------
+udyan@udyan-K55VM:~/Desktop/CVIT/Ray-Tracing/raytracer-code/black_and_white_SAH$ ./a.out cow.obj cow1010.pgm 1000 1000
+Time For Reading Input + Building BVH: 29.207308 ms
+Time For Intersection Tests: 464.430467 ms
+Time For Writing To Output: 80.786391 ms
+TOTAL TIME: 574.424166 ms
+udyan@udyan-K55VM:~/Desktop/CVIT/Ray-Tracing/raytracer-code/black_and_white_SAH$ ./a.out bunny.obj bunny1010.pgm 1000 1000
+Time For Reading Input + Building BVH: 253.580987 ms
+Time For Intersection Tests: 480.217485 ms
+Time For Writing To Output: 79.915853 ms
+TOTAL TIME: 813.714325 ms
+
+------------WITH (NEW IMPROVED) SAH BVH------------
+udyan@udyan-K55VM:~/Desktop/CVIT/Ray-Tracing/raytracer-code/black_and_white_SAH$ ./a.out cow.obj c.pgm 1000 1000
+Time For Reading Input + Building BVH: 34.573337 ms
+Time For Intersection Tests: 417.568374 ms
+Time For Writing To Output: 80.157273 ms
+TOTAL TIME: 532.298984 ms
+udyan@udyan-K55VM:~/Desktop/CVIT/Ray-Tracing/raytracer-code/black_and_white_SAH$ ./a.out bunny.obj b.pgm 1000 1000
+Time For Reading Input + Building BVH: 247.415812 ms
+Time For Intersection Tests: 459.699499 ms
+Time For Writing To Output: 78.900132 ms
+TOTAL TIME: 786.015443 ms
+
+------------WITH (MODIFIED) SAH BVH------------
+udyan@udyan-K55VM:~/Desktop/CVIT/Ray-Tracing/raytracer-code/black_and_white_SAH$ ./a.out cow.obj c1.pgm 1000 1000
+Time For Reading Input + Building BVH: 26.129105 ms
+Time For Intersection Tests: 405.379055 ms
+Time For Writing To Output: 81.531028 ms
+TOTAL TIME: 513.039188 ms
+
+udyan@udyan-K55VM:~/Desktop/CVIT/Ray-Tracing/raytracer-code/black_and_white_SAH$ ./a.out bunny.obj b1.pgm 1000 1000
+Time For Reading Input + Building BVH: 212.417152 ms
+Time For Intersection Tests: 434.245197 ms
+Time For Writing To Output: 80.950051 ms
+TOTAL TIME: 727.612400 ms
+
+------------WITH (LINEARIZED) SAH BVH------------
+udyan@udyan-K55VM:~/Desktop/CVIT/Ray-Tracing/raytracer-code/black_and_white_SAH$ ./a.out bunny.obj b.pgm 1000 1000
+Time For Reading Input + Building BVH: 217.906560 ms
+Time For Intersection Tests: 661.688981 ms
+Time For Writing To Output: 78.451028 ms
+TOTAL TIME: 958.046569 ms
+
+udyan@udyan-K55VM:~/Desktop/CVIT/Ray-Tracing/raytracer-code/black_and_white_SAH$ ./a.out cow.obj c.pgm 1000 1000
+Time For Reading Input + Building BVH: 25.687872 ms
+Time For Intersection Tests: 605.529726 ms
+Time For Writing To Output: 78.614807 ms
+TOTAL TIME: 709.832405 ms
+
+
